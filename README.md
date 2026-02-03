@@ -1,85 +1,93 @@
-# File Organizer (Python)
+# 📂 File Organizer (Python)
 
-A Python-based file organizer that automatically sorts files in a folder into categorized directories based on file extensions.  
-This project demonstrates **OOP design, modular code, and real-world file handling** — perfect for interviews or portfolio demonstration.
+A simple and efficient Python script that automatically organizes files
+inside a folder based on their extensions.\
+Perfect for cleaning messy Downloads / Desktop / Project directories.
 
----
+------------------------------------------------------------------------
 
-## Problem Statement
+## 🚀 Features
 
-Folders like **Downloads** or **Desktop** often contain a mix of file types, making it difficult to locate files.  
-Manually organizing files is time-consuming and error-prone.  
+-   Automatically sorts files into category folders\
+-   Creates folders if they don't exist\
+-   Handles unknown file types safely\
+-   Easy to run -- no external dependencies\
+-   Works on Windows / Mac / Linux
 
-This script automatically organizes files into folders such as **Images**, **Music**, **Videos**, **Documents**, and **Others**.
+------------------------------------------------------------------------
 
----
+## 🧩 Supported Categories (Example)
 
-## Features
+  File Type   Extensions
+  ----------- --------------------------
+  Images      .jpg, .png, .jpeg, .gif
+  Documents   .pdf, .docx, .txt, .xlsx
+  Music       .mp3, .wav
+  Videos      .mp4, .mkv
+  Archives    .zip, .rar
+  Code        .py, .js, .html
 
-- Organizes files based on extensions
-- Automatically creates category folders if they don’t exist
-- Handles unknown file types gracefully
-- Displays completion messages after organizing
-- Notifies the user if there are no files to organize
-- Validates folder paths and displays clear error messages
+Unknown extensions will be moved to "Others" folder.
 
----
+------------------------------------------------------------------------
 
-## Skills Demonstrated
+## 📁 Project Structure
 
-- Python fundamentals and execution model
-- Object-Oriented Programming (OOP)
-- Modular code structure (separate `config.py`, `organizer.py`, `main.py`)
-- File system handling (`os`, `shutil`)
-- Dictionary-based logic for clean and scalable code
-- Input validation and error handling
-- Time & space complexity awareness
+    FileOrganizer/
+    │
+    ├── main.py
+    ├── organizer.py
+    ├── config.py
+    └── README.md
 
----
+------------------------------------------------------------------------
 
-## Project Structure
+## ▶ How to Run
 
-FileOrganizer/
-├── main.py # Program entry point
-├── organizer.py # FileOrganizer class and organizing logic
-├── config.py # File extension → category mapping
-├── README.md
+### 1. Clone the repository
 
+    git clone https://github.com/shwetaocodes/FileOrganizer.git
 
----
+### 2. Go to project folder
 
-## How to Run
+    cd FileOrganizer
 
-1. Clone the repository
-2. Navigate to the project folder
-3. Run the program
-4. Enter the folder path when prompted
+### 3. Run the script
 
+    python main.py
 
-## Example
+------------------------------------------------------------------------
 
-# Before Running the Script
+## 🧪 Example
 
-TestFolder/
-├── photo.jpg
-├── song.mp3
-├── movie.mp4
-├── notes.txt
-├── resume.pdf
-├── random.xyz
+### Before
 
+    Downloads/
+    ├── photo.jpg
+    ├── song.mp3
+    ├── report.pdf
+    ├── video.mp4
 
-# After Running the Script
+### After
 
-TestFolder/
-├── Images/
-│   └── photo.jpg
-├── Music/
-│   └── song.mp3
-├── Videos/
-│   └── movie.mp4
-├── Documents/
-│   ├── notes.txt
-│   └── resume.pdf
-├── Others/
-│   └── random.xyz
+    Downloads/
+    ├── Images/
+    │   └── photo.jpg
+    ├── Music/
+    │   └── song.mp3
+    ├── Documents/
+    │   └── report.pdf
+    └── Videos/
+        └── video.mp4
+
+------------------------------------------------------------------------
+
+## ⚙ Customization
+
+Edit config.py to add your own extensions.
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+Open Source
